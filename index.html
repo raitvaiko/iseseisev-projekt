@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Eesti viktoriin</title>
+		<link type='text/css' rel='stylesheet' href='index.css'/>
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open Sans"/>
+	</head>
+	<body>
+		<div id='container'>
+			<div id='title'>
+				<h1>Eesti viktoriin</h1>
+			</div>
+   			<br/>
+  			<div id='quiz'></div>
+    		<div class='button' id='next'><a href='#'>Järgmine</a></div>
+    		<div class='button' id='prev'><a href='#'>Eelmine</a></div>
+    		<div class='button' id='start'> <a href='#'>Alusta uuesti</a></div>
+    	</div>
+
+		<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>
+		<script type='text/javascript' src='index.js'></script>
+
+
+		<img src="images/estonia-flag.jpg" alt="Euroopa kaart" width="205" usemap="#europeMap" class="pic1">
+		<img src="images/estonia-flag.jpg" alt="Euroopa kaart" width="205" usemap="#europeMap" class="pic2">	
+
+
+		<form action="https://et.wikipedia.org/wiki/Eesti" target="_blank">
+			<input type="submit" value="Abimaterjal" class="buttoned"/>
+		</form>
+	  
+	  <form action="  https://github.com/eesrakenduste-arendamine-2019/iseseisev-projekt" target="_blank">
+			<input type="submit" value="Github" class="github"/>
+		</form>
+		
+			<input type="button" value="Punane teema" onclick="chBackcolor('red');" class="essanupp">
+			<script>
+	  function chBackcolor(color) {
+		 document.body.style.background = color;
+	  }
+			</script>
+	  
+			<input type="button" value="Sinine teema" onclick="chBackcolor1('blue');" class="teinenupp">
+			<script>
+	  function chBackcolor1(color) {
+		 document.body.style.background = color;
+	  }
+			</script>
+	</body>
+</html>

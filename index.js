@@ -2,8 +2,10 @@ function changeBackground(color) {
   document.body.style.background = color;
 }
 
-window.addEventListener("load",function() { changeBackground('#70B4F2'); });
+window.addEventListener("load",function() { changeBackground('#70B4F2'); }); //Taustavärvi muutmiseks
 
+
+//Küsimused
 (function() {
   var questions = [{
     question: "Mis on Eesti pealinn?",
@@ -33,7 +35,7 @@ window.addEventListener("load",function() { changeBackground('#70B4F2'); });
   
   //Järgmine küsimus
   displayNext();
-  
+  //preventDefault ei lase vajutada next kui ei ole valitud vastus
   $('#next').on('click', function (e) {
     e.preventDefault();
     
@@ -46,7 +48,7 @@ window.addEventListener("load",function() { changeBackground('#70B4F2'); });
     if (isNaN(selections[questionCounter])) {
       alert('Palun valige vastus!');
     } else {
-      questionCounter++;
+      questionCounter++;//Kui valitud, siis lisab 1 juurde questionCounterisse
       displayNext();
     }
   });

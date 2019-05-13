@@ -12,4 +12,4 @@ Viktoriini lõpus näidatakse kui palju küsimusi õigesti vastati.
 Viktoriini lõpus on nupp "Alusta uuesti" ning saab viktoriini korrata.
 
 
-<img src="capture.PNG"
+![Screenshot](Capture.PNG)
